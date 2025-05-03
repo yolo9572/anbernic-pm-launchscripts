@@ -15,13 +15,13 @@ get_controls
 
 SHDIR="$(cd $(dirname "$0"); pwd)"
 
-GAMEDIR=$SHDIR/apotris
+GAMEDIR=$SHDIR/Littlerunmo
 cd $GAMEDIR
 
 export SDL_GAMECONTROLLERCONFIG="$sdl_controllerconfig"
 
-$GPTOKEYB "Apotris.aarch64" &
-./Apotris.aarch64
+$GPTOKEYB "Littlerunmo.aarch64" &
+./Littlerunmo.aarch64
 
 $ESUDO kill -9 $(pidof gptokeyb)
 $ESUDO systemctl restart oga_events &
